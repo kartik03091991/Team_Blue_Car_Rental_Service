@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carrentalservice</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+<h1>CAR RENTAL SERVICE | AUTOVERMIETUNG</h1>
+<img src="{{ user_image2 }}", width="200" ,height="200", length="200"></img><img src="{{ user_image }}", width="500" ,height="600"></img>
+<form name="Usecase" action="." method="post">
+    <label>Enter Use Case Number:</label>
+    <input type="text" name="UseCase">
+    <input type="submit" value="submit">
+</form>
+<form name="output" action="." method="get">
+    <label>Output:</label>
+    {% for x in finuse %}
+        <h2> {{ x }} </h2>
+    {%endfor%}
+</form>
+<h3>ABOUT Use Cases</h3>
+<p>1. As a customer I need help from the Car rental service (Admin) as the car is not working in between. So as an admin will check the GPS location of the customer and the location of the nearest service station of the car rental service and send the help, if the car is not fixed in the given time of span, then a new car will be delivered to the customer from the nearest service station.</p>
+<p>2. As an Admin, checking and listing all the cars that had a red mark on it and were present at a specific location at a given time frame based on a Police Report</p>
+<p>3. The organization X has booked 50 cars on rent, for two days, for their annual event. As an event manager of this organization, I want to extend this ongoing booking time for four days, as there are change in plans.As an admin of the Car Rental Service, I want to extend renting time for this user (organization X). And accordingly, will arrange the bookings of the customers (whose bookings are going to affect due to this scenario).</p>
+<p>4. I want to hire a driver for my travel along with the booking of the car, as I cannot drive.</p>
+<p>5. As an admin, I want to find my cars which crossed a specific city over a specific time duration. I am in collaboration with another company whose ads are stuck on my cars and they want to know the effect of these ads in a specific city.</p>
+<p>6. If customer will be returning from business trip to his town and want to book a rented car. But sadly, the flight got delayed and unable to inform to the car renting service. Then admin of the car renting service will keep a track of the flight schedule and change the booking time as per the flights.</p>
+<p>7. As an Admin we check all reviews of routes from customers, then collect historical data of previous customers and analyse the best routes and suggest routes for future customers visiting the same destinations.</p>
+<img src="{{ user_image3 }}", width="500" ,height="600"></img><img src="{{ user_image4 }}", width="500" ,height="600"></img>
+</body>
+</html>
