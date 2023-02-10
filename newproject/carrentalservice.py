@@ -263,7 +263,7 @@ def connectMongo(useCase):
         rev1 = affectedUsers.__len__()
         #print("No. of Affected users is: ",affectedUsers.__len__())
         lstfin.append("No. of Affected users is: ")
-        lstfin.append('26')
+        
         #print(affectedUsers[1]["Car_ID"])
         for user in affectedUsers:   
             #print(user)
